@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="configApp">
+<head>
+  <meta charset="UTF-8">
+  <title>ollfrow config-window</title>
+  <link rel="stylesheet" href="node_modules/photon/dist/css/photon.css">
+  <script src="node_modules/photon/dist/template-app/js/menu.js" charset="utf-8"></script>
+  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="js/window-config.js"></script>
+  <script type="text/javascript">
+    document.ondragover = document.ondrop = function(e) {
+      e.preventDefault(); return false;
+    };
+  </script>
+</head>
+<body ng-controller="ConfigController as ctrl">
+<div class="window">
+
+<div class="window-content">
+  <form>
+    <div class="form-group">
+      <label>Config Data</label>
+      <textarea id="configData" class="form-control" rows="3" ng-model="configData"></textarea>
+    </div>
+
+    <div class="form-group">
+      <button id="update" class="btn btn-large btn-default" ng-click="update()">
+        save config
+      </button>
+    </div>
+
+    <div class="form-group">
+      <button class="btn btn-large btn-default" ng-click="openUserDataDir()">
+        open user data dir
+      </button>
+    </div>
+  </form>
+</div>
+
+<footer class="toolbar toolbar-footer">
+  <h1 class="title"></h1>
+</footer>
+<div>
+</body>
+</html>

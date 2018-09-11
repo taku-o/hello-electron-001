@@ -1,0 +1,47 @@
+{
+  "name": "ollfrow",
+  "version": "0.1.0",
+  "description": "all timeline flow on one pane",
+  "main": "electron.js",
+  "types": "types.d.ts",
+  "scripts": {
+    "app": "electron .",
+    "tsc": "tsc",
+    "lint": "eslint *.ts js/*.ts test/*.ts",
+    "package": "electron-packager . ollfrow --platform=darwin --arch=x64 --electronVersion=2.0.8  --overwrite --asar.unpackDir=shell --ignore='^/\\.git' --ignore='^/\\.gitignore' --ignore='^/package-lock.json' --ignore='^/.eslintrc.json' --ignore='^/tsconfig.json' --ignore='^/README.md' --ignore='^/.+\\.ts' --ignore='^/js/.+\\.ts' --ignore='^/test' --ignore='^/shell/hello.go' --ignore='.DS_Store' --ignore='Thumbs.db'",
+    "packageshell": "electron-packager . ollfrow --platform=darwin --arch=x64 --electronVersion=2.0.8  --overwrite --ignore='^/\\.git' --ignore='^/\\.gitignore' --ignore='^/package-lock.json' --ignore='^/.eslintrc.json' --ignore='^/tsconfig.json' --ignore='^/README.md' --ignore='^/.+\\.ts' --ignore='^/js/.+\\.ts' --ignore='^/test' --ignore='^/shell/hello.go' --ignore='.DS_Store' --ignore='Thumbs.db'",
+    "test": "tsc && mocha --bail test/*Spec.js"
+  },
+  "keywords": [
+    "twitter",
+    "mastodon"
+  ],
+  "homepage": "https://github.com/taku-o/ollfrow",
+  "bugs": {
+    "url": "https://github.com/taku-o/ollfrow/issues",
+    "email": "mail@nanasi.jp"
+  },
+  "author": "taku-o <mail@nanasi.jp> (http://nanasi.jp/)",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.7.3",
+    "electron-config": "^1.0.0",
+    "electron-localshortcut": "^3.1.0",
+    "electron-log": "^2.2.17",
+    "photon": "git+https://github.com/connors/photon.git"
+  },
+  "devDependencies": {
+    "@types/angular": "^1.6.50",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.9.4",
+    "asar": "^0.14.3",
+    "electron": "^2.0.8",
+    "electron-packager": "^12.1.1",
+    "eslint": "^5.5.0",
+    "mocha": "^5.2.0",
+    "spectron": "^4.0.0",
+    "temp": "^0.8.3",
+    "typescript": "^3.0.3",
+    "typescript-eslint-parser": "^18.0.0"
+  }
+}
