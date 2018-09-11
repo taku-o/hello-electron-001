@@ -1,7 +1,7 @@
 {
   "name": "ollfrow",
   "version": "0.1.0",
-  "description": "all timeline flow on one pane",
+  "description": "hello-electron-001",
   "main": "electron.js",
   "types": "types.d.ts",
   "scripts": {
@@ -9,16 +9,15 @@
     "tsc": "tsc",
     "lint": "eslint *.ts js/*.ts test/*.ts",
     "package": "electron-packager . ollfrow --platform=darwin --arch=x64 --electronVersion=2.0.8  --overwrite --asar.unpackDir=shell --ignore='^/\\.git' --ignore='^/\\.gitignore' --ignore='^/package-lock.json' --ignore='^/.eslintrc.json' --ignore='^/tsconfig.json' --ignore='^/README.md' --ignore='^/.+\\.ts' --ignore='^/js/.+\\.ts' --ignore='^/test' --ignore='^/shell/hello.go' --ignore='.DS_Store' --ignore='Thumbs.db'",
-    "packageshell": "electron-packager . ollfrow --platform=darwin --arch=x64 --electronVersion=2.0.8  --overwrite --ignore='^/\\.git' --ignore='^/\\.gitignore' --ignore='^/package-lock.json' --ignore='^/.eslintrc.json' --ignore='^/tsconfig.json' --ignore='^/README.md' --ignore='^/.+\\.ts' --ignore='^/js/.+\\.ts' --ignore='^/test' --ignore='^/shell/hello.go' --ignore='.DS_Store' --ignore='Thumbs.db'",
     "test": "tsc && mocha --bail test/*Spec.js"
   },
   "keywords": [
     "twitter",
     "mastodon"
   ],
-  "homepage": "https://github.com/taku-o/ollfrow",
+  "homepage": "https://github.com/taku-o/hello-electron-001",
   "bugs": {
-    "url": "https://github.com/taku-o/ollfrow/issues",
+    "url": "https://github.com/taku-o/hello-electron-001/issues",
     "email": "mail@nanasi.jp"
   },
   "author": "taku-o <mail@nanasi.jp> (http://nanasi.jp/)",
