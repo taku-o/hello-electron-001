@@ -1,5 +1,5 @@
 {
-  "name": "ollfrow",
+  "name": "hello-electron-001",
   "version": "0.1.0",
   "description": "hello-electron-001",
   "main": "electron.js",
@@ -8,7 +8,8 @@
     "app": "electron .",
     "tsc": "tsc",
     "lint": "eslint *.ts js/*.ts test/*.ts",
-    "package": "electron-packager . ollfrow --platform=darwin --arch=x64 --electronVersion=2.0.8  --overwrite --asar.unpackDir=shell --ignore='^/\\.git' --ignore='^/\\.gitignore' --ignore='^/package-lock.json' --ignore='^/.eslintrc.json' --ignore='^/tsconfig.json' --ignore='^/README.md' --ignore='^/.+\\.ts' --ignore='^/js/.+\\.ts' --ignore='^/test' --ignore='^/shell/hello.go' --ignore='.DS_Store' --ignore='Thumbs.db'",
+    "package": "electron-packager . hello-electron-001 --platform=darwin --arch=x64 --electronVersion=2.0.8  --overwrite --asar.unpackDir=shell --ignore='^/\\.git' --ignore='^/\\.gitignore' --ignore='^/package-lock.json' --ignore='^/.eslintrc.json' --ignore='^/tsconfig.json' --ignore='^/README.md' --ignore='^/.+\\.ts' --ignore='^/js/.+\\.ts' --ignore='^/test' --ignore='^/shell/hello.go' --ignore='.DS_Store' --ignore='Thumbs.db'",
+    "noasar": "electron-packager . hello-electron-001-noasar --platform=darwin --arch=x64 --electronVersion=2.0.8  --overwrite --ignore='^/\\.git' --ignore='^/\\.gitignore' --ignore='^/package-lock.json' --ignore='^/.eslintrc.json' --ignore='^/tsconfig.json' --ignore='^/README.md' --ignore='^/.+\\.ts' --ignore='^/js/.+\\.ts' --ignore='^/test' --ignore='^/shell/hello.go' --ignore='.DS_Store' --ignore='Thumbs.db'",
     "test": "tsc && mocha --bail test/*Spec.js"
   },
   "keywords": [
